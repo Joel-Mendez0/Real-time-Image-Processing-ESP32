@@ -1,0 +1,31 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM11 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400ebd03: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:441
+0x400ec0e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/task_wdt/task_wdt.c:515
+0x40085be5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:1240
+0x400d632b: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:165
+0x400d6b03: uart_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_uart.c:218
+0x400d591b: console_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5486: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/vfs.c:482 (discriminator 4)
+0x40089e35: __swrite at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x40089281: __sflush_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x400892e2: _fflush_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4008a32e: __swbuf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/wbuf.c:74
+0x400f0286: __sputc_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:699
+ (inlined by) _putc_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putc.c:88
+0x400f02e9: putchar at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/putchar.c:85
+0x400da263: printBinary at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/OV2640LCD/main/main.c:152 (discriminator 4)
+0x400da30d: draw_captured_image at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/OV2640LCD/main/main.c:180
+0x400da34b: process_image at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/OV2640LCD/main/main.c:191
+0x400da381: camera_capture at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/OV2640LCD/main/main.c:201
+0x400da48f: app_main at C:/Espressif/frameworks/esp-idf-v5.2.2/projects/OV2640LCD/main/main.c:225
+0x400fc223: main_task at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/app_startup.c:208
+0x4008d1a9: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

@@ -1,0 +1,276 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7172
+load:0x40078000,len:15552
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2024 23:07:44[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=15704h ( 87812) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002572c vaddr=3ffb0000 size=036b8h ( 14008) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00028dec vaddr=40080000 size=0722ch ( 29228) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2c9fch (182780) map[0m
+[0;32mI (197) esp_image: segment 4: paddr=0005ca24 vaddr=4008722c size=0dca0h ( 56480) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (238) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (240) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (240) esp_psram: Speed: 80MHz[0m
+[0;32mI (244) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (252) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (775) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (783) cpu_start: Pro cpu start user code[0m
+[0;32mI (783) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (783) cpu_start: Application information:[0m
+[0;32mI (786) cpu_start: Project name:     app-template[0m
+[0;32mI (792) cpu_start: App version:      v5.2.2-dirty[0m
+[0;32mI (797) cpu_start: Compile time:     Jul 22 2024 23:07:34[0m
+[0;32mI (803) cpu_start: ELF file SHA256:  82e647f91...[0m
+[0;32mI (809) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (814) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (819) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (824) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (828) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (836) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (842) heap_init: At 3FFB40A8 len 0002BF58 (175 KiB): DRAM[0m
+[0;32mI (848) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (854) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (861) heap_init: At 40094ECC len 0000B134 (44 KiB): IRAM[0m
+[0;32mI (867) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (875) spi_flash: detected chip: generic[0m
+[0;32mI (879) spi_flash: flash io: dio[0m
+[0;33mW (883) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (894) main_task: Started on CPU0[0m
+[0;32mI (904) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (904) main_task: Calling app_main()[0m
+[0;32mI (904) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1034) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1034) cam_hal: cam init ok[0m
+[0;32mI (1034) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1034) sccb: sccb_i2c_port=1[0m
+[0;32mI (1054) camera: Detected camera at address=0x30[0m
+[0;32mI (1054) camera: Detected OV2640 camera[0m
+[0;32mI (1054) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1144) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (1144) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (1144) cam_hal: cam config ok[0m
+[0;32mI (1154) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;31mE (1334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (2334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (3334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (4334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (5334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (6334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (7334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (8334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (9334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (10334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (11334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (12334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (13334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (14334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (15334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (16334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (17334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (18334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (19334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (20334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (21334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (22334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (23334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (24334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (25334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (26334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (27334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (28334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (29334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (30334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (31334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (32334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (33334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (34334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (35334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (36334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (37334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (38334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (39334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (40334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (41334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (42334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (43334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (44334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (45334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (46334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (47334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (48334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (49334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (50334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (51334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (52334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (53334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (54334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (55334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (56334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (57334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (58334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (59334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (60334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (61334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (62334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (63334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (64334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (65334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (66334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (67334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (68334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (69334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (70334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (71334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (72334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (73334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (74334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (75334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (76334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (77334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (78334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (79334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (80334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (81334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (82334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (83334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (84334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (85334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (86334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (87334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (88334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (89334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (90334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (91334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (92334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (93334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (94334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (95334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (96334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (97334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (98334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (99334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (100334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (101334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (102334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (103334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (104334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (105334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (106334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (107334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (108334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (109334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (110334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (111334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (112334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (113334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (114334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (115334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (116334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (117334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (118334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (119334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (120334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (121334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (122334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (123334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (124334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (125334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (126334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (127334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (128334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (129334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (130334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (131334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (132334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (133334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (134334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (135334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (136334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (137334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (138334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (139334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (140334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (141334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (142334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (143334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (144334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (145334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (146334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (147334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (148334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (149334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (150334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (151334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (152334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (153334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (154334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (155334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (156334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (157334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (158334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (159334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (160334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (161334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (162334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (163334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (164334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (165334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (166334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (167334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (168334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (169334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (170334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (171334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (172334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (173334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (174334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (175334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (176334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (177334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (178334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (179334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (180334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (181334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (182334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (183334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (184334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (185334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (186334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (187334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (188334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (189334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (190334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (191334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (192334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (193334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (194334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (195334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (196334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (197334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (198334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (199334) process_image: Failed to allocate memory for output image buffer[0m
+[0;31mE (200334) process_image: Failed to allocate memory for output image buffer[0m

@@ -1,0 +1,355 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7172
+load:0x40078000,len:15552
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2024 23:07:44[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=157c4h ( 88004) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=000257ec vaddr=3ffb0000 size=036b8h ( 14008) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00028eac vaddr=40080000 size=0716ch ( 29036) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2ca3ch (182844) map[0m
+[0;32mI (197) esp_image: segment 4: paddr=0005ca64 vaddr=4008716c size=0dd60h ( 56672) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Multicore app[0m
+[0;32mI (239) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (240) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (243) esp_psram: Speed: 80MHz[0m
+[0;32mI (247) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (254) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (778) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (786) cpu_start: Pro cpu start user code[0m
+[0;32mI (786) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (786) cpu_start: Application information:[0m
+[0;32mI (789) cpu_start: Project name:     app-template[0m
+[0;32mI (794) cpu_start: App version:      v5.2.2-dirty[0m
+[0;32mI (799) cpu_start: Compile time:     Jul 22 2024 23:07:34[0m
+[0;32mI (806) cpu_start: ELF file SHA256:  904d92137...[0m
+[0;32mI (811) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (816) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (821) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (826) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (831) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (838) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (844) heap_init: At 3FFD98A8 len 00006758 (25 KiB): DRAM[0m
+[0;32mI (850) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (856) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (863) heap_init: At 40094ECC len 0000B134 (44 KiB): IRAM[0m
+[0;32mI (869) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (877) spi_flash: detected chip: generic[0m
+[0;32mI (881) spi_flash: flash io: dio[0m
+[0;33mW (885) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (896) main_task: Started on CPU0[0m
+[0;32mI (906) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (906) main_task: Calling app_main()[0m
+[0;32mI (906) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1036) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1036) cam_hal: cam init ok[0m
+[0;32mI (1036) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1036) sccb: sccb_i2c_port=1[0m
+[0;32mI (1056) camera: Detected camera at address=0x30[0m
+[0;32mI (1056) camera: Detected OV2640 camera[0m
+[0;32mI (1056) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1146) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (1146) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (1146) cam_hal: cam config ok[0m
+[0;32mI (1156) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1336) process_image: Processing image with length = 8213[0m
+[0;32mI (1456) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (1516) process_image: Processing image with length = 8547[0m
+[0;32mI (1626) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (1696) process_image: Processing image with length = 8722[0m
+[0;32mI (1806) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (1876) process_image: Processing image with length = 8601[0m
+[0;32mI (1986) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (2056) process_image: Processing image with length = 8160[0m
+[0;32mI (2166) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (2236) process_image: Processing image with length = 8160[0m
+[0;32mI (2346) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (2416) process_image: Processing image with length = 6753[0m
+[0;32mI (2526) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (2586) process_image: Processing image with length = 5984[0m
+[0;32mI (2696) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (2756) process_image: Processing image with length = 5984[0m
+[0;32mI (2866) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (2926) process_image: Processing image with length = 5984[0m
+[0;32mI (3036) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (3096) process_image: Processing image with length = 5984[0m
+[0;32mI (3196) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (3266) process_image: Processing image with length = 5984[0m
+[0;32mI (3366) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (3436) process_image: Processing image with length = 5984[0m
+[0;32mI (3536) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (3606) process_image: Processing image with length = 5984[0m
+[0;32mI (3706) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (3776) process_image: Processing image with length = 5984[0m
+[0;32mI (3876) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (3946) process_image: Processing image with length = 5984[0m
+[0;32mI (4046) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (4116) process_image: Processing image with length = 5984[0m
+[0;32mI (4216) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (4286) process_image: Processing image with length = 5984[0m
+[0;32mI (4386) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (4456) process_image: Processing image with length = 5984[0m
+[0;32mI (4556) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (4626) process_image: Processing image with length = 4870[0m
+[0;32mI (4726) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (4796) process_image: Processing image with length = 4870[0m
+[0;32mI (4896) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (4966) process_image: Processing image with length = 4870[0m
+[0;32mI (5066) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (5136) process_image: Processing image with length = 4024[0m
+[0;32mI (5236) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (5306) process_image: Processing image with length = 4024[0m
+[0;32mI (5406) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (5476) process_image: Processing image with length = 4024[0m
+[0;32mI (5576) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (5646) process_image: Processing image with length = 4024[0m
+[0;32mI (5746) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (5816) process_image: Processing image with length = 4024[0m
+[0;32mI (5916) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (5986) process_image: Processing image with length = 4024[0m
+[0;32mI (6086) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (6156) process_image: Processing image with length = 4024[0m
+[0;32mI (6256) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (6326) process_image: Processing image with length = 4024[0m
+[0;32mI (6426) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (6496) process_image: Processing image with length = 4024[0m
+[0;32mI (6596) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (6666) process_image: Processing image with length = 4024[0m
+[0;32mI (6766) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (6836) process_image: Processing image with length = 4024[0m
+[0;32mI (6936) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (7006) process_image: Processing image with length = 4024[0m
+[0;32mI (7106) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (7176) process_image: Processing image with length = 4024[0m
+[0;32mI (7276) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (7346) process_image: Processing image with length = 4024[0m
+[0;32mI (7446) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (7516) process_image: Processing image with length = 4024[0m
+[0;32mI (7616) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (7686) process_image: Processing image with length = 4024[0m
+[0;32mI (7786) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (7856) process_image: Processing image with length = 4024[0m
+[0;32mI (7956) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (8026) process_image: Processing image with length = 4024[0m
+[0;32mI (8126) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (8196) process_image: Processing image with length = 4024[0m
+[0;32mI (8296) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (8366) process_image: Processing image with length = 4024[0m
+[0;32mI (8466) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (8536) process_image: Processing image with length = 4024[0m
+[0;32mI (8636) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (8706) process_image: Processing image with length = 4024[0m
+[0;32mI (8806) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (8876) process_image: Processing image with length = 4024[0m
+[0;32mI (8976) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (9046) process_image: Processing image with length = 4024[0m
+[0;32mI (9146) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (9216) process_image: Processing image with length = 4024[0m
+[0;32mI (9316) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (9386) process_image: Processing image with length = 4024[0m
+[0;32mI (9486) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (9556) process_image: Processing image with length = 4024[0m
+[0;32mI (9656) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (9726) process_image: Processing image with length = 4024[0m
+[0;32mI (9826) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (9896) process_image: Processing image with length = 4024[0m
+[0;32mI (9996) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (10066) process_image: Processing image with length = 4024[0m
+[0;32mI (10166) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (10236) process_image: Processing image with length = 4024[0m
+[0;32mI (10336) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (10406) process_image: Processing image with length = 4024[0m
+[0;32mI (10506) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (10576) process_image: Processing image with length = 4024[0m
+[0;32mI (10676) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (10746) process_image: Processing image with length = 4024[0m
+[0;32mI (10846) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (10916) process_image: Processing image with length = 4024[0m
+[0;32mI (11016) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (11086) process_image: Processing image with length = 4024[0m
+[0;32mI (11186) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (11246) process_image: Processing image with length = 4024[0m
+[0;32mI (11346) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (11416) process_image: Processing image with length = 4024[0m
+[0;32mI (11516) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (11576) process_image: Processing image with length = 4024[0m
+[0;32mI (11676) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (11746) process_image: Processing image with length = 4024[0m
+[0;32mI (11846) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (11906) process_image: Processing image with length = 4024[0m
+[0;32mI (12006) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (12066) process_image: Processing image with length = 4024[0m
+[0;32mI (12166) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (12236) process_image: Processing image with length = 4024[0m
+[0;32mI (12336) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (12396) process_image: Processing image with length = 4024[0m
+[0;32mI (12496) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (12556) process_image: Processing image with length = 4024[0m
+[0;32mI (12656) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (12716) process_image: Processing image with length = 4024[0m
+[0;32mI (12816) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (12876) process_image: Processing image with length = 4024[0m
+[0;32mI (12976) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (13036) process_image: Processing image with length = 4024[0m
+[0;32mI (13136) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (13196) process_image: Processing image with length = 4024[0m
+[0;32mI (13296) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (13366) process_image: Processing image with length = 4024[0m
+[0;32mI (13466) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (13526) process_image: Processing image with length = 4024[0m
+[0;32mI (13626) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (13686) process_image: Processing image with length = 4024[0m
+[0;32mI (13786) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (13856) process_image: Processing image with length = 4024[0m
+[0;32mI (13956) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14016) process_image: Processing image with length = 4024[0m
+[0;32mI (14116) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14176) process_image: Processing image with length = 4024[0m
+[0;32mI (14276) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14336) process_image: Processing image with length = 4024[0m
+[0;32mI (14436) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14496) process_image: Processing image with length = 4024[0m
+[0;32mI (14596) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14656) process_image: Processing image with length = 4024[0m
+[0;32mI (14756) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14816) process_image: Processing image with length = 4024[0m
+[0;32mI (14916) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (14976) process_image: Processing image with length = 4024[0m
+[0;32mI (15076) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (15136) process_image: Processing image with length = 4024[0m
+[0;32mI (15236) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (15296) process_image: Processing image with length = 4024[0m
+[0;32mI (15396) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (15456) process_image: Processing image with length = 4024[0m
+[0;32mI (15556) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (15616) process_image: Processing image with length = 4024[0m
+[0;32mI (15716) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (15776) process_image: Processing image with length = 4024[0m
+[0;32mI (15876) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (15936) process_image: Processing image with length = 4024[0m
+[0;32mI (16036) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (16096) process_image: Processing image with length = 4024[0m
+[0;32mI (16196) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (16256) process_image: Processing image with length = 4024[0m
+[0;32mI (16356) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (16416) process_image: Processing image with length = 4024[0m
+[0;32mI (16516) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (16576) process_image: Processing image with length = 4024[0m
+[0;32mI (16676) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (16736) process_image: Processing image with length = 4024[0m
+[0;32mI (16836) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (16906) process_image: Processing image with length = 4024[0m
+[0;32mI (17006) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (17066) process_image: Processing image with length = 4024[0m
+[0;32mI (17166) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (17226) process_image: Processing image with length = 4024[0m
+[0;32mI (17326) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (17386) process_image: Processing image with length = 4024[0m
+[0;32mI (17486) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (17546) process_image: Processing image with length = 4024[0m
+[0;32mI (17646) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (17706) process_image: Processing image with length = 4024[0m
+[0;32mI (17806) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (17866) process_image: Processing image with length = 4024[0m
+[0;32mI (17966) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18026) process_image: Processing image with length = 4024[0m
+[0;32mI (18126) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18186) process_image: Processing image with length = 4024[0m
+[0;32mI (18286) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18346) process_image: Processing image with length = 4024[0m
+[0;32mI (18446) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18506) process_image: Processing image with length = 4024[0m
+[0;32mI (18606) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18666) process_image: Processing image with length = 4024[0m
+[0;32mI (18766) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18826) process_image: Processing image with length = 4024[0m
+[0;32mI (18926) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (18986) process_image: Processing image with length = 4024[0m
+[0;32mI (19086) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (19146) process_image: Processing image with length = 4024[0m
+[0;32mI (19246) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (19306) process_image: Processing image with length = 4024[0m
+[0;32mI (19406) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (19466) process_image: Processing image with length = 4024[0m
+[0;32mI (19566) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (19636) process_image: Processing image with length = 4024[0m
+[0;32mI (19736) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (19796) process_image: Processing image with length = 4024[0m
+[0;32mI (19896) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (19956) process_image: Processing image with length = 4024[0m
+[0;32mI (20056) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (20116) process_image: Processing image with length = 4024[0m
+[0;32mI (20216) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (20286) process_image: Processing image with length = 4024[0m
+[0;32mI (20386) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (20446) process_image: Processing image with length = 4024[0m
+[0;32mI (20546) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (20606) process_image: Processing image with length = 4024[0m
+[0;32mI (20706) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (20766) process_image: Processing image with length = 4024[0m
+[0;32mI (20866) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (20926) process_image: Processing image with length = 4024[0m
+[0;32mI (21026) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (21086) process_image: Processing image with length = 4024[0m
+[0;32mI (21186) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (21246) process_image: Processing image with length = 4024[0m
+[0;32mI (21346) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (21406) process_image: Processing image with length = 4024[0m
+[0;32mI (21506) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (21566) process_image: Processing image with length = 4024[0m
+[0;32mI (21666) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (21726) process_image: Processing image with length = 4024[0m
+[0;32mI (21826) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (21886) process_image: Processing image with length = 4024[0m
+[0;32mI (21986) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (22046) process_image: Processing image with length = 4024[0m
+[0;32mI (22146) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (22206) process_image: Processing image with length = 4024[0m
+[0;32mI (22306) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (22366) process_image: Processing image with length = 4024[0m
+[0;32mI (22466) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (22526) process_image: Processing image with length = 4024[0m
+[0;32mI (22626) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (22686) process_image: Processing image with length = 4024[0m
+[0;32mI (22786) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (22846) process_image: Processing image with length = 4024[0m
+[0;32mI (22946) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23006) process_image: Processing image with length = 4024[0m
+[0;32mI (23106) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23166) process_image: Processing image with length = 4024[0m
+[0;32mI (23266) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23326) process_image: Processing image with length = 4024[0m
+[0;32mI (23426) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23496) process_image: Processing image with length = 4024[0m
+[0;32mI (23596) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23656) process_image: Processing image with length = 4024[0m
+[0;32mI (23756) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23816) process_image: Processing image with length = 4024[0m
+[0;32mI (23916) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (23986) process_image: Processing image with length = 4024[0m
+[0;32mI (24086) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (24146) process_image: Processing image with length = 4024[0m
+[0;32mI (24246) esp32-camera: Decoded image size: 320x240[0m
+[0;32mI (24306) process_image: Processing image with length = 4024[0m
